@@ -7,32 +7,42 @@ const Navbar = () => {
             {/* タイトル：　NiFT_Blog */}
             <div className="flex-1">
                 <Link href={"/"}>
-                    <a className="btn btn-ghost normal-case text-xl xl:text-3xl text-red-800">NGC : Nagoya Growth Connection</a>
+                    <a className="btn btn-ghost normal-case text-xl text-red-800">NGC : Nagoya Growth Connection</a>
                 </Link>
             </div>
-            <div className="flex-none">
-                <ul className="menu menu-horizontal p-0">
-                <li><a>Item 1</a></li>
-                <li tabIndex={0}>
-                    <a>
-                    Parent
-                    <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>
-                    </a>
-                    <ul className="p-2 bg-base-100">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                    </ul>
-                </li>
-                <li><a>Item 3</a></li>
+            <div className="flex-none invisible md:visible">
+                <ul className="menu menu-horizontal p-0 font-bold text-red-800">
+                    <Link href={"/"}>
+                        <li><a>Home</a></li>
+                    </Link>
+                    <Link href={"/event"}>
+                        <li><a>イベント</a></li>
+                    </Link>
+                    <Link href={"/inquiry"}>
+                        <li><a>お問い合わせ</a></li>
+                    </Link>
                 </ul>
             </div>
 
-            {/* ハンバーガーメニュー */}
-            {/* <div className="flex-none">
-                <button className="btn btn-square btn-ghost">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                </button>
-            </div> */}
+            {/* ３つの点 */}
+            <div className="dropdown dropdown-end flex-none md:hidden">
+                <label tabIndex={0} className="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current fill-black"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </label>
+                <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+                    <div className="card-body">
+                        <Link href={"/"}>
+                            <a>Home</a>
+                        </Link>
+                        <Link href={"/event"}>
+                            <a>イベント</a>
+                        </Link>
+                        <Link href={"/inquiry"}>
+                            <a>お問い合わせ</a>
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 };

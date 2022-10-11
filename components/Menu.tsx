@@ -10,7 +10,7 @@ const Menu = () => {
                     <button className="btn btn-block bg-red-800 border-none rounded-none text-xs h-2 no-animation text-white">ホーム</button>
                 </Link>
                 <Link href={"/お問い合わせ"}>
-                    <button className="btn btn-block bg-red-800k border-none rounded-none text-xs h-2 no-animation text-white">お問い合わせ</button>
+                    <button className="btn btn-block bg-red-800 border-none rounded-none text-xs h-2 no-animation text-white">お問い合わせ</button>
                 </Link>
                 <Link href={"/おすすめのサービス"}>
                     <button className="btn btn-block bg-red-800 border-none rounded-none text-xs h-2 no-animation text-white">おすすめのサービス</button>
