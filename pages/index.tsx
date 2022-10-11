@@ -2,6 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
+import Hero from '../components/Hero';
+import Menu from '../components/Menu';
 import { client } from '../libs/client';
 import { Blog } from '../types/blog';
 import { Tag } from '../types/tag';
@@ -14,6 +16,10 @@ type Props = {
 export default function Home({ blogs, tag }: Props) {
   return (
     <>
+      <Menu />
+      {/* Hero部分 */}
+      <Hero />
+
       {/* 投稿一覧 */}
       <div className="container w-auto justify-between px-4 pt-4 pb-12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5">
 

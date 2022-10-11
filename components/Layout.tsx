@@ -14,7 +14,7 @@ const Layout = ({ children }: Props) => {
             <Seo />
             <Navbar />
             {/* <Menu /> */}
-            <main className="p-4">{children}</main>
+            <main className="">{children}</main>
             <Footer />
         </>
     );
