@@ -10,7 +10,7 @@ const Navbar = () => {
                     <a className="btn btn-ghost normal-case text-xl text-red-800">NGC</a>
                 </Link>
             </div>
-            <div className="flex-none invisible md:visible">
+            <div className="flex-none hidden md:visible">
                 <ul className="menu menu-horizontal p-0 font-bold text-red-800">
                     <Link href={"/"}>
                         <li><a className="btn btn-ghost">Home</a></li>
