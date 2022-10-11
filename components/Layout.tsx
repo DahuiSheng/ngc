@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
-import Footer from "../Footer";
-import Navbar from "../Navbar";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
 // import Menu from "./Menu";
-import Seo from "./Seo";
+import Seo from "./_common/Seo";
 
 interface Props {
     children: ReactNode;
@@ -15,7 +15,7 @@ const Layout = ({ children }: Props) => {
             <Navbar />
             {/* <Menu /> */}
             <main className="p-4">{children}</main>
-            {/* <Footer /> */}
+            <Footer />
         </>
     );
 };
