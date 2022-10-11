@@ -7,7 +7,7 @@ const Navbar = () => {
             {/* タイトル：　NiFT_Blog */}
             <div className="flex-1">
                 <Link href={"/"}>
-                    <a className="btn btn-ghost normal-case text-md md:text-xl text-red-800">NGC</a>
+                    <a className="btn btn-ghost normal-case text-xl text-red-800">NGC</a>
                 </Link>
             </div>
             <div className="flex-none invisible md:visible">
@@ -31,7 +31,7 @@ const Navbar = () => {
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current fill-black"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                 </label>
                 {/* 中身 */}
-                <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
+                <div tabIndex={0} className="mt-3 card card-compact dropdown-content w-52 px-6 bg-base-100 shadow">
                     <div className="card-body">
                         <Link href={"/"}>
                             <a className="btn btn-ghost">Home</a>

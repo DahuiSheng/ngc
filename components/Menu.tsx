@@ -9,13 +9,13 @@ const Menu = () => {
                 <Link href={"/"}>
                     <button className="btn btn-block bg-red-800 border-none rounded-none text-xs h-2 no-animation text-white">ホーム</button>
                 </Link>
-                <Link href={"/お問い合わせ"}>
+                <Link href={"/event"}>
+                    <button className="btn btn-block bg-red-800 border-none rounded-none text-xs h-2 no-animation text-white">イベント</button>
+                </Link>
+                <Link href={"/inquiry"}>
                     <button className="btn btn-block bg-red-800 border-none rounded-none text-xs h-2 no-animation text-white">お問い合わせ</button>
                 </Link>
-                <Link href={"/おすすめのサービス"}>
-                    <button className="btn btn-block bg-red-800 border-none rounded-none text-xs h-2 no-animation text-white">おすすめのサービス</button>
-                </Link>
-                <Link href={"/AboutUS"}>
+                <Link href={"/aboutus"}>
                     <button className="btn btn-block bg-red-800 border-none rounded-none text-xs h-2 no-animation text-white">About US</button>
                 </Link>
             </div>

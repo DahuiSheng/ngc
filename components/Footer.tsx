@@ -5,7 +5,7 @@ import { BiGrid, BiHomeAlt, BiMoon, BiSun } from "react-icons/bi"
 
 const Footer = () => {
     return (
-        <div className="h-16 z-50 text-sm">
+        <div className="h-16 z-50 text-sm btm-nav md:hidden">
             {/* button className = "active" */}
             {/* <Link href={"/Collection"}>
                 <button className="">
