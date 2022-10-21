@@ -9,17 +9,18 @@ type Props = {
 export default function Blog({ blog }: Props) {
   return (
     <>
-      <div className="max-w-6xl py-6 mx-auto bg-zinc-800">
+      {/* ブログのサムネを表示 */}
+      {/* <img
+        className="object-cover w-full shadow-sm h-full"
+        src={blog.eyecatch.url}
+      /> */}
+
+      <div className="max-w-6xl py-6 mx-auto bg-white">
         {/* ブログのタイトルを表示 */}
-        <div className="sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-white">
+        <div className="sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-red-800">
           {blog.title}
         </div>
       </div>
-      {/* ブログのサムネを表示 */}
-      <img
-        className="object-cover w-full shadow-sm h-full"
-        src={blog.eyecatch.url}
-      />
 
       {/* ブログの中身を表示 */}
       <div className=" py-6 mx-auto bg-white">
