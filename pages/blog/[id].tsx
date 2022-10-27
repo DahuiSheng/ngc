@@ -17,7 +17,7 @@ export default function Blog({ blog }: Props) {
 
       <div className="max-w-6xl py-6 mx-auto bg-white">
         {/* ブログのタイトルを表示 */}
-        <div className="sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-red-800">
+        <div className="sm:text-3xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-blue-900">
           {blog.title}
         </div>
       </div>
