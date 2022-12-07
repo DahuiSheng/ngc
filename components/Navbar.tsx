@@ -7,7 +7,7 @@ const Navbar = () => {
             {/* タイトル：　NiFT_Blog */}
             <div className="flex-1">
                 <Link href={"/"}>
-                    <a className="btn btn-ghost normal-case text-xl text-blue-900">NGC</a>
+                    <a className="btn btn-ghost normal-case text-xl text-blue-900">TGC</a>
                 </Link>
             </div>
             <div className="flex-none hidden md:visible">
